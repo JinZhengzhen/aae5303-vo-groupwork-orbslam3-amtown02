@@ -26,7 +26,7 @@ Camera.RGB: 0
 
 # Added for explicit groupwork reporting consistency.
 # Keep at 1.0 to preserve the same effective scale setting and result interpretation.
-Camera.imageScale: 1.0
+Camera.imageScale: 0.7
 
 #--------------------------------------------------------------------------------------------
 # ORB Parameters
