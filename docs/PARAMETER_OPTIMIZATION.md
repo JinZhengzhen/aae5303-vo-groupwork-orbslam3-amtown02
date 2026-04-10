@@ -17,9 +17,13 @@ From `configs/amtown_mono_groupwork.yaml`:
 - `Camera.newHeight: 1024`
 - `Camera.fps: 10` (integer for ORB-SLAM3 parser compatibility)
 - `ORBextractor.nFeatures: 1500`
-- `ORBextractor.iniThFAST: 18`
-- `ORBextractor.minThFAST: 7`
+- `ORBextractor.scaleFactor: 1.3`
+- `ORBextractor.nLevels: 10`
+- `ORBextractor.iniThFAST: 22`
+- `ORBextractor.minThFAST: 11`
 - `Camera.imageScale: 1.0` (explicitly declared for documentation consistency)
+- `Initializer.minParallax: 1.0`
+- `Initializer.minTriangulated: 50`
 
 ## 3) Why add `Camera.imageScale: 1.0`
 
@@ -31,12 +35,12 @@ The setting is added to make scale handling explicit in configuration documentat
 
 ## 4) Metrics consistency note
 
-The reported leaderboard metrics in this repository are kept consistent with the previously validated AMtown02 Part 1 evaluation package:
+With the updated parameter set, the re-evaluated metrics are:
 
-- ATE RMSE: 6.6100 m
-- RPE Trans Drift: 2.1332 m/m
-- RPE Rot Drift: 59.1839 deg/100m
-- Completeness: 98.65%
+- ATE RMSE: 6.5290 m
+- RPE Trans Drift: 2.1363 m/m
+- RPE Rot Drift: 59.0288 deg/100m
+- Completeness: 98.71%
 
 ## 5) Link to outputs
 

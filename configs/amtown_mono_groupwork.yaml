@@ -32,10 +32,16 @@ Camera.imageScale: 0.7
 # ORB Parameters
 #--------------------------------------------------------------------------------------------
 ORBextractor.nFeatures: 1500
-ORBextractor.scaleFactor: 1.2
-ORBextractor.nLevels: 8
-ORBextractor.iniThFAST: 18
-ORBextractor.minThFAST: 7
+ORBextractor.scaleFactor: 1.3
+ORBextractor.nLevels: 10
+ORBextractor.iniThFAST: 22
+ORBextractor.minThFAST: 11
+
+#--------------------------------------------------------------------------------------------
+# Initialization Parameters
+#--------------------------------------------------------------------------------------------
+Initializer.minParallax: 1.0
+Initializer.minTriangulated: 50
 
 #--------------------------------------------------------------------------------------------
 # Viewer Parameters

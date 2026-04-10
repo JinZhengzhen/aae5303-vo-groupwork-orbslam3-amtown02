@@ -14,10 +14,10 @@ The Part 1 output trajectory (`CameraTrajectory.txt`) is the direct input to Par
 
 | Metric | Value | Description |
 |--------|-------|-------------|
-| **ATE RMSE** | **6.6100 m** | Global error after Sim(3) + scale correction |
-| **RPE Trans Drift** | **2.1332 m/m** | Translation drift rate |
-| **RPE Rot Drift** | **59.1839 deg/100m** | Rotation drift rate |
-| **Completeness** | **98.65%** | Matched poses / GT poses |
+| **ATE RMSE** | **6.5290 m** | Global error after Sim(3) + scale correction |
+| **RPE Trans Drift** | **2.1363 m/m** | Translation drift rate |
+| **RPE Rot Drift** | **59.0288 deg/100m** | Rotation drift rate |
+| **Completeness** | **98.71%** | Matched poses / GT poses |
 
 Result files:
 
@@ -53,15 +53,22 @@ Main config file:
 | Parameter | Value |
 |-----------|-------|
 | `ORBextractor.nFeatures` | `1500` |
-| `ORBextractor.scaleFactor` | `1.2` |
-| `ORBextractor.nLevels` | `8` |
-| `ORBextractor.iniThFAST` | `18` |
-| `ORBextractor.minThFAST` | `7` |
+| `ORBextractor.scaleFactor` | `1.3` |
+| `ORBextractor.nLevels` | `10` |
+| `ORBextractor.iniThFAST` | `22` |
+| `ORBextractor.minThFAST` | `11` |
+
+### Initialization Parameters
+
+| Parameter | Value |
+|-----------|-------|
+| `Initializer.minParallax` | `1.0` |
+| `Initializer.minTriangulated` | `50` |
 
 ### Parameter Change Note
 
 `Camera.imageScale: 1.0` is explicitly added for groupwork documentation consistency.
-It does not change the effective scaling behavior (remains no extra scaling), so the reported metrics remain consistent with the validated Part 1 result package.
+The current README metrics are from the updated parameter run and were re-evaluated after applying this full parameter set.
 
 For full rationale:
 

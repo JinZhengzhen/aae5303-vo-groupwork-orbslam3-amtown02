@@ -13,16 +13,16 @@ This file records the current Visual Odometry baseline results for AAE5303 Part 
 
 ## Metrics
 
-- ATE RMSE (m): `6.610005`
-- RPE Trans Drift (m/m): `2.133198`
-- RPE Rot Drift (deg/100m): `59.18393`
-- Completeness (%): `98.647854`
+- ATE RMSE (m): `6.529045`
+- RPE Trans Drift (m/m): `2.136270`
+- RPE Rot Drift (deg/100m): `59.028780`
+- Completeness (%): `98.706643`
 
 ## Trajectory Stats
 
-- Estimated poses: `6711`
+- Estimated poses: `6715`
 - Ground-truth poses: `3402`
-- Matched poses: `3356`
+- Matched poses: `3358`
 
 ## Notes
 
